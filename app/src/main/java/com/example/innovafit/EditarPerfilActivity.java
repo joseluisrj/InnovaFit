@@ -159,11 +159,11 @@ public class EditarPerfilActivity extends AppCompatActivity {
                 TextView edtIdGender = findViewById(R.id.edtIdGender);
                 edtIdGender.setText(item.getKey());
                 //Genero genero = (Genero) parent.getSelectedItem();
-                Toast.makeText(EditarPerfilActivity.this, "Seleccionado: " + item.getKey() + " " + item.getValue(), Toast.LENGTH_LONG).show();
+                //Toast.makeText(EditarPerfilActivity.this, "Seleccionado: " + item.getKey() + " " + item.getValue(), Toast.LENGTH_LONG).show();
             }
 
             public void onNothingSelected(AdapterView<?> parent) {
-                Toast.makeText(EditarPerfilActivity.this, "No ha seleccionado",    Toast.LENGTH_LONG).show();
+                //Toast.makeText(EditarPerfilActivity.this, "No ha seleccionado",    Toast.LENGTH_LONG).show();
             }
         });
 

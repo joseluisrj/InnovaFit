@@ -100,7 +100,7 @@ public class DeleteReservationsActivity extends AppCompatActivity {
             editor.commit();
 
 
-            Toast toast= Toast.makeText(getApplicationContext(), "La reserva se eliminó correctamente==" + stock, Toast.LENGTH_SHORT);
+            Toast toast= Toast.makeText(getApplicationContext(), "La reserva se eliminó correctamente", Toast.LENGTH_SHORT);
             toast.setGravity(Gravity.CENTER|Gravity.CENTER_HORIZONTAL, 0, 0);
             toast.show();
 

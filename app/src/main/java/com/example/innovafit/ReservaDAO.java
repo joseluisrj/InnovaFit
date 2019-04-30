@@ -120,12 +120,12 @@ public class ReservaDAO {
         }
     }
 
-    public ArrayList<Reserva> buscar(String fecha1) throws DAOException {
+    public ArrayList<Reserva> buscar(Integer idMembresia, String fecha1) throws DAOException {
         Log.i("ReservaDAO", "buscar()");
         SQLiteDatabase db = _dbHelper.getReadableDatabase();
         ArrayList<Reserva> lista = new ArrayList<Reserva>();
         try {
-            Cursor c = db.rawQuery("select id_reserva, r.id_clase id_clase, r.id_membresia id_membresia, r.estado estado, c.nombre nombre_clase, entrenador, fecha, hora_inicio, hora_fin, c.id_sede id_sede, s.nombre nombre_sede from reserva r, clase c, sede s where r.id_clase = c.id_clase and c.id_sede = s.id_sede and fecha = '" + fecha1 + "'", null);
+            Cursor c = db.rawQuery("select id_reserva, r.id_clase id_clase, r.id_membresia id_membresia, r.estado estado, c.nombre nombre_clase, entrenador, fecha, hora_inicio, hora_fin, c.id_sede id_sede, s.nombre nombre_sede from reserva r, clase c, sede s where r.id_clase = c.id_clase and c.id_sede = s.id_sede and r.id_membresia = '" + idMembresia + "' and fecha = '" + fecha1 + "'", null);
 
             if (c.getCount() > 0) {
                 c.moveToFirst();

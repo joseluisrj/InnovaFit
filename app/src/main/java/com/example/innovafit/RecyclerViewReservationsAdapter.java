@@ -50,7 +50,7 @@ public class RecyclerViewReservationsAdapter extends RecyclerView.Adapter<Recycl
             public void onClick(View view) {
                 Log.d(TAG, "onClick: clicked on: " + mReservasList.get(position));
 
-                Toast.makeText(mContext, String.valueOf(mReservasList.get(position).getIdReserva()), Toast.LENGTH_SHORT).show();
+                //Toast.makeText(mContext, String.valueOf(mReservasList.get(position).getIdReserva()), Toast.LENGTH_SHORT).show();
 
                 Intent intent = new Intent(mContext, DeleteReservationsActivity.class);
 

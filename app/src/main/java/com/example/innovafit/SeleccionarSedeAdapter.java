@@ -47,7 +47,7 @@ public class SeleccionarSedeAdapter extends RecyclerView.Adapter<SeleccionarSede
             public void onClick(View view) {
                 Log.d(TAG, "onClick: clicked on: " + mSedesList.get(position));
 
-                Toast.makeText(mContext, String.valueOf(mSedesList.get(position).getIdSede()) + " " + mSedesList.get(position).getNombre(), Toast.LENGTH_SHORT).show();
+                //Toast.makeText(mContext, String.valueOf(mSedesList.get(position).getIdSede()) + " " + mSedesList.get(position).getNombre(), Toast.LENGTH_SHORT).show();
 
                 Intent intent = new Intent(mContext, ActivityOne.class);
 

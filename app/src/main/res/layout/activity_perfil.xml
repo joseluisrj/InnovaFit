@@ -40,16 +40,16 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
         android:layout_marginStart="284dp"
         android:layout_marginTop="16dp"
         android:text="Editar"
         android:onClick="editarPerfil"
         android:textColor="#FFFFFF"
         app:backgroundTint="@color/colorPrimary"
+        android:background="@drawable/boton_redondo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/classDetailTitle" />
 

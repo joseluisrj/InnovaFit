@@ -47,7 +47,7 @@ public class NotificacionesAdapter extends RecyclerView.Adapter<NotificacionesAd
             public void onClick(View view) {
                 Log.d(TAG, "onClick: clicked on: " + mNotificacionesList.get(position));
 
-                Toast.makeText(mContext, String.valueOf(mNotificacionesList.get(position).getTitulo()) + " " + mNotificacionesList.get(position).getTitulo(), Toast.LENGTH_SHORT).show();
+                //Toast.makeText(mContext, String.valueOf(mNotificacionesList.get(position).getTitulo()) + " " + mNotificacionesList.get(position).getTitulo(), Toast.LENGTH_SHORT).show();
 
                 Intent intent = new Intent(mContext, DetalleNotifActivity.class);
 

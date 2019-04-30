@@ -126,7 +126,7 @@ public class ActivityOne extends AppCompatActivity {
             public void onDateSelected(Calendar date, int position) {
                 String selectedDateStr = DateFormat.format("yyyy-MM-dd", date).toString();
 
-                Toast.makeText(ActivityOne.this, selectedDateStr + " selected!", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(ActivityOne.this, selectedDateStr + " selected!", Toast.LENGTH_SHORT).show();
                 Log.i("onDateSelected", selectedDateStr + " - Position = " + position);
 
                 initClases(Integer.parseInt(idSede),selectedDateStr);

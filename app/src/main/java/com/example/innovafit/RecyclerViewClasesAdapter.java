@@ -56,7 +56,7 @@ public class RecyclerViewClasesAdapter extends RecyclerView.Adapter<RecyclerView
             public void onClick(View view) {
                 Log.d(TAG, "onClick: clicked on: " + mClasesList.get(position));
 
-                Toast.makeText(mContext, String.valueOf(mClasesList.get(position).getIdClase()), Toast.LENGTH_SHORT).show();
+                //Toast.makeText(mContext, String.valueOf(mClasesList.get(position).getIdClase()), Toast.LENGTH_SHORT).show();
 
                 ReservaDAO reservaDAO = new ReservaDAO(mActivity.getBaseContext());
                 SharedPreferences prefs = mActivity.getSharedPreferences("PREFERENCIAS", Context.MODE_PRIVATE);
@@ -65,7 +65,7 @@ public class RecyclerViewClasesAdapter extends RecyclerView.Adapter<RecyclerView
                 int count = 0;
 
                 try {
-                    count = reservaDAO.buscar(mClasesList.get(position).getFecha()).size();
+                    count = reservaDAO.buscar(idMembresia, mClasesList.get(position).getFecha()).size();
 
                 } catch (DAOException e) {
                     Log.i("buscarClasePorSedeFecha", "====> " + e.getMessage());

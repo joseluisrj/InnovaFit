@@ -51,7 +51,7 @@ public class MembresiasAdapter extends RecyclerView.Adapter<MembresiasAdapter.My
             public void onClick(View view) {
                 Log.d(TAG, "onClick: clicked on: " + mMembresiasList.get(position));
 
-                Toast.makeText(mContext, String.valueOf(mMembresiasList.get(position).getTipoMembresia().getCosto().toString()) + " " + mMembresiasList.get(position).getNombre(), Toast.LENGTH_SHORT).show();
+                //Toast.makeText(mContext, String.valueOf(mMembresiasList.get(position).getTipoMembresia().getCosto().toString()) + " " + mMembresiasList.get(position).getNombre(), Toast.LENGTH_SHORT).show();
 
                 /*Intent intent = new Intent(mContext, ActivityOne.class);
 

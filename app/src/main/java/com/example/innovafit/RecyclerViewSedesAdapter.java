@@ -48,7 +48,7 @@ public class RecyclerViewSedesAdapter extends RecyclerView.Adapter<RecyclerViewS
             public void onClick(View view) {
                 Log.d(TAG, "onClick: clicked on: " + mSedesList.get(position));
 
-                Toast.makeText(mContext, String.valueOf(mSedesList.get(position).getIdSede()), Toast.LENGTH_SHORT).show();
+                //Toast.makeText(mContext, String.valueOf(mSedesList.get(position).getIdSede()), Toast.LENGTH_SHORT).show();
 
                 Intent intent = new Intent(mContext, MapaBasicoActivity.class);
 
