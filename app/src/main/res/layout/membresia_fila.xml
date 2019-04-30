@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_layout_membership"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/circleplus16"
+        android:drawablePadding="10dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/desdeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="DESDE:"
+        android:textStyle="bold"
+        android:layout_below="@id/titulo"/>
+
+    <TextView
+        android:id="@+id/desde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="60dp"
+        android:layout_below="@id/titulo"/>
+
+    <TextView
+        android:id="@+id/hastaText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="HASTA:"
+        android:textStyle="bold"
+        android:layout_below="@id/desde"/>
+
+    <TextView
+        android:id="@+id/hasta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="60dp"
+        android:layout_below="@id/desde" />
+
+    <TextView
+        android:id="@+id/costoText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="COSTO:"
+        android:textStyle="bold"
+        android:layout_below="@id/hasta"/>
+
+    <TextView
+        android:id="@+id/costo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="60dp"
+        android:layout_below="@id/hasta"/>
+
+    <TextView
+        android:id="@+id/sesionesText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="SESIONES:"
+        android:textStyle="bold"
+        android:layout_below="@id/costo"/>
+
+    <TextView
+        android:id="@+id/sesiones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="80dp"
+        android:layout_below="@id/costo"/>
+
+    <TextView
+        android:id="@+id/verMembresia"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/boton_redondo"
+        android:paddingTop="4dp"
+        android:paddingLeft="12dp"
+        android:textSize="14dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginEnd="30dp"
+        android:text="VER" />
+
+</RelativeLayout>
